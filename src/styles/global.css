@@ -5,7 +5,6 @@
 
 
 
-/*Reset*/
 * {
     box-sizing: border-box;
     position: relative;
@@ -30,7 +29,6 @@ h1 {
 
 
 
-/*barra de navegacion*/
 
 #nav {
 
@@ -55,12 +53,12 @@ h1 {
 }
 
 
-#nav .title-a {  /* Agrega un espacio entre #nav y .title-a */
+#nav .title-a {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 800;
     text-decoration: none;
-    color: #ffffff; /* Cambia este color según lo que necesites */
+    color: #ffffff;
     line-height: 23.44px;
 }
 

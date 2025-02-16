@@ -39,7 +39,7 @@ const Menu = () => {
           </div>
         ))}
       </div>
-      <Recomendaciones /> {/* Agregamos las recomendaciones aquí */}
+      <Recomendaciones /> 
       <Clientes />
       <DescargaMenu />
     </div>

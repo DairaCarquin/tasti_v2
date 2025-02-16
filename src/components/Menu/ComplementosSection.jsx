@@ -1,6 +1,6 @@
-import React from "react";
-import MenuItem from "./MenuItem";
-import "../../styles/menu/menu.css";
+import React, { useEffect, useState } from "react";
+import MenuSection from "./MenuSection";
+import { obtenerCategoriaPorNombre, obtenerProductosPorCategoria } from "../../services/categoria.services";
 
 import comp1 from "../../assets/img_menu/comp1.png";
 import comp2 from "../../assets/img_menu/comp2.png";
@@ -9,25 +9,42 @@ import comp4 from "../../assets/img_menu/comp4.png";
 import comp5 from "../../assets/img_menu/comp5.png";
 import comp6 from "../../assets/img_menu/comp6.png";
 
-const complementos = [
-  { name: "Ensalada César", price: "18.50", image: comp1 },
-  { name: "Ensalada de Vegetales", price: "15.50", image: comp2 },
-  { name: "Patatas fritas", price: "18.50", image: comp3 },
-  { name: "Nachos con queso", price: "20.00", image: comp4 },
-  { name: "Aros de cebolla", price: "19.00", image: comp5 },
-  { name: "Tequeños", price: "18.00", image: comp6 },
-];
+const imageMap = {
+  "comp1.jpg": comp1,
+  "comp2.jpg": comp2,
+  "comp3.jpg": comp3,
+  "comp4.jpg": comp4,
+  "comp5.jpg": comp5,
+  "comp6.jpg": comp6,
+};
 
 const ComplementosSection = () => {
-  return (
-    <section id="complementos" className="menu-seccion">
-      <div className="menu-contenido">
-        {complementos.map((item, index) => (
-          <MenuItem key={index} {...item} />
-        ))}
-      </div>
-    </section>
-  );
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchComplementos = async () => {
+      try {
+        const categoria = await obtenerCategoriaPorNombre("Complementos");
+        if (!categoria) return;
+
+        const productos = await obtenerProductosPorCategoria(categoria.id);
+        const productsWithImages = productos.map((producto) => ({
+          id: producto.id,
+          name: producto.nombre,
+          price: producto.precio,
+          image: imageMap[producto.imagen] || comp1,
+        }));
+
+        setProducts(productsWithImages);
+      } catch (error) {
+        return error;
+      }
+    };
+
+    fetchComplementos();
+  }, []);
+
+  return <MenuSection title="Complementos" items={products} />;
 };
 
 export default ComplementosSection;

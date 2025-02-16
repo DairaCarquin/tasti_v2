@@ -3,7 +3,7 @@ import "../../styles/home.css";
 
 import vector4 from "../../assets/img/Vector(4).png";
 import vector5 from "../../assets/img/Vector(5).png";
-import menuPDF from "../Home/Document/TastyCarta.pdf"; // Asegúrate de que la ruta sea correcta
+import menuPDF from "../Home/Document/TastyCarta.pdf";
 
 const DescargaMenu = () => {
     return (

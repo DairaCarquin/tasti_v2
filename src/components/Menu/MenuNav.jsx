@@ -35,7 +35,7 @@ const MenuNav = () => {
                 <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection("complementos"); }}>COMPLEMENTOS</a>
                 <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection("bebidas"); }}>BEBIDAS</a>
             </nav>
-            {renderSection()} {/* Renderiza la sección activa */}
+            {renderSection()}  
         </div>
     );
 };

@@ -36,7 +36,6 @@ const Ubicacion = () => {
 
     return (
         <div className="contenedor-ubi">
-            {/* Sección de encabezado */}
             <div className="header-Contacto">
                 <h1>Ubicación</h1>
                 <p>
@@ -47,9 +46,7 @@ const Ubicacion = () => {
                 </p>
             </div>
 
-            {/* Sección con el mapa y la información */}
             <div className="contenedor-ubi-columnas">
-                {/* Mapa de Google */}
                 <div className="col2-ubi">
                     <div className="map">
                         <iframe
@@ -64,7 +61,6 @@ const Ubicacion = () => {
                     </div>
                 </div>
 
-                {/* Información de contacto */}
                 <div className="col1-ubi">
                     <p>
                         <b>Centro de Lima, Perú</b>

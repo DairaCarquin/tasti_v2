@@ -6,7 +6,7 @@ const MenuSection = ({ items }) => {
         const pedidos = JSON.parse(sessionStorage.getItem("pedidos")) || [];
         pedidos.push(item);
         sessionStorage.setItem("pedidos", JSON.stringify(pedidos));
-        window.location.href = "/pedido"; // Redirige a la página de pedidos
+        window.location.href = "/pedido"; 
     };
 
     return (

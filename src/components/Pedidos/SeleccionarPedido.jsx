@@ -19,7 +19,7 @@ const SeleccionarPedido = () => {
         if (pedidos.length > 0) {
             pedidos[pedidos.length - 1] = { ...pedido, cantidad, tamano };
             sessionStorage.setItem("pedidos", JSON.stringify(pedidos));
-            window.location.reload(); // Refresca la página para actualizar los datos
+            window.location.reload(); 
         }
     };
 

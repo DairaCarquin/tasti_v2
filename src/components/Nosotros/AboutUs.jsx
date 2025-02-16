@@ -13,7 +13,6 @@ const AboutUs = () => {
                     hasta deliciosos complementos y refrescantes bebidas.
                 </p>
                 <button className="boton">
-                    {/* <a href="/menu">Ir al menú &gt;</a> */}
                     <a href="#">Ir al menú &gt;</a>
                 </button>
                 <div className="inputBox">
