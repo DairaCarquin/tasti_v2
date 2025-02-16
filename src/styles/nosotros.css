@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*Reset*/
+* {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 0;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #F2F2F2;
+    overflow-x: hidden;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1 {
+    text-wrap: balance;
+}
+
+
+
+/*barra de navegacion*/
+
+#nav {
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    flex-wrap: wrap;
+    animation: fadeIn 1.5s ease-out;
+    padding-top: 30px;
+}
+
+#nav .title-nav {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: #FF5B00 !important;
+    animation: fadeIn 1s ease-out;
+    margin: 19.92px 0;
+    line-height: 23.44px;
+
+}
+
+
+#nav .title-a {  /* Agrega un espacio entre #nav y .title-a */
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #ffffff; /* Cambia este color según lo que necesites */
+    line-height: 23.44px;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.button-nav {
+    background-color: #F6762C;
+    width: 175px;
+    height: 49px;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23.44px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-out;
+}
+
+header #nav {
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+
+header #nav #links-nav a {
+    margin: 0px 20px;
+}
+
+.boton {
+    background-color: #F6762C;
+    width: 175px;
+    height: 49px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23.44px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: #ff4c28;
+}
+
+.boton a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background-color: #F2F2F2;
+    flex-direction: row;
+    margin-left: 190px;
+    margin-top: 25px;
+}
+
+.inputBox {
+    margin: 15px 0;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    height: 50px;
+    margin-top: 20px;
+    filter: drop-shadow(0 0 5px #8a8a8a);
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    margin: 50px;
+    height: 70%;
+}
+
+.col1 {
+    margin: 30px;
+    padding: 10px;
+    height: 70%;
+}
+
+.contenedor .col1 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    color: #FF5B00;
+    margin: 20px 0;
+    line-height: 23.44px;
+}
+
+.contenedor .col1 p {
+    margin: 50px 0;
+}
+
+.carousel {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    height: 400px;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.carousel-item {
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #F2F2F2;
+    color: #FF5B00;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev {
+    right: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+    margin: 50px 0;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: solid #FF5B00;
+}
+
+.carousel-control-prev-icon::before {
+    border-width: 0 3px 3px 0;
+    transform: rotate(225deg);
+}
+
+.carousel-control-next-icon::before {
+    border-width: 0 3px 3px 0;
+    transform: rotate(40deg);
+}

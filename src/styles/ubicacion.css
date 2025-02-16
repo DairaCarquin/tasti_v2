@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*Reset*/
+* {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 0;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #F2F2F2;
+    overflow-x: hidden;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1 {
+    text-wrap: balance;
+}
+
+
+
+/*barra de navegacion*/
+
+#nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: fadeIn 1.5s ease-out;
+    padding-top: 30px;
+}
+
+#nav .title-nav a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: #FF5B00;
+    animation: fadeIn 1s ease-out;
+    margin: 19.92px 0;
+    line-height: 23.44px;
+
+}
+
+
+#nav a {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #000000;
+    line-height: 23.44px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.button-nav-ubi {
+    background-color: #F6762C;
+    width: 175px;
+    height: 49px;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23.44px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-out;
+}
+
+header #nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+header #nav #ubi-nav a {
+    margin: 0px 20px;
+}
+
+
+.contenedor-ubi-columnas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.col1-ubi,
+.col2-ubi {
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.map iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.contenedor-ubi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-Contacto {
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.contenedor-ubi h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    color: #FF5B00;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+
+.contenedor-ubi p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+
+.contenedor-ubi h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    color: #FF5B00;
+    margin: 20px 0;
+    line-height: 23.44px;
+}
+
+
+.contenedor-ubi p {
+    margin: 20px 0;
+}
+
+
+
+.contenedor-ubi-columnas .col1-ubi {
+    background-color: #83380D;
+    color: white;
+}
+
+.contenedor-ubi-columnas .col1-ubi .button {
+    background-color: #F6762C;
+    width: 175px;
+    height: 49px;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23.44px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.boton1-ubi {
+    background-color: #F6762C;
+    width: 190px;
+    height: 55px;
+    border-radius: 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23.44px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.boton2-ubi {
+    background-color: #83380D;
+    width: 190px;
+    height: 55px;
+    border-radius: 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23.44px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.boton1-ubi,
+.boton2-ubi {
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.contenedor-ubi-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}

@@ -1,0 +1,888 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* * {
+    cursor: url('../img/icons8-pizza-48.png'), auto;
+    
+} */
+
+@media (min-width: 768px) {
+
+
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 767px) {
+    .contenedor {
+        flex-direction: column;
+    }
+}
+
+
+/*Reset*/
+* {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 0;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #F2F2F2;
+    overflow-x: hidden;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1 {
+    text-wrap: balance;
+}
+
+/*Nav*/
+
+
+
+#nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: fadeIn 1.5s ease-out;
+}
+
+#nav h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: #FFFFFF;
+    animation: fadeIn 1s ease-out;
+}
+
+#nav a {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #FFFFFF !important ;
+    line-height: 23.44px;
+    margin-right: 50px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.button-nav {
+    background-color: #F6762C;
+    width: 175px;
+    height: 49px;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23.44px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-out;
+
+
+}
+
+header #nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+header #nav #links-nav a {
+    margin: 0px 20px;
+}
+
+#section-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 190px;
+    margin-top: 25px;
+
+
+}
+
+.container {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+
+
+}
+
+.text-container span {
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.41px;
+    left: 5px;
+}
+
+.text-container h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 100px;
+    color: #FFFFFF;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.text-container p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.5;
+    opacity: 70%;
+    color: #FFFFFF;
+    text-align: left;
+    padding-top: -20px;
+}
+
+.burguer-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation: fadeText 80s infinite;
+}
+
+.burguer-info:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.burguer-info:nth-child(2) {
+    animation-delay: 20s;
+}
+
+.burguer-info:nth-child(3) {
+    animation-delay: 40s;
+}
+
+.burguer-info:nth-child(4) {
+    animation-delay: 60s;
+}
+
+@keyframes fadeText {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#section-container button {
+    background-color: #F6762C;
+    width: 175px;
+    height: 49px;
+    border-radius: 8px;
+    font: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23.44px;
+    color: #FFFFFF;
+    top: 380px;
+}
+
+#img-container {
+    width: 580px;
+    height: 600px;
+    margin-right: 200px;
+    overflow: hidden;
+    padding: 45px;
+    position: relative;
+}
+
+.imagenes-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.burguer-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation: fadeText 80s infinite;
+}
+
+.burguer-info:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.burguer-info:nth-child(2) {
+    animation-delay: 20s;
+}
+
+.burguer-info:nth-child(3) {
+    animation-delay: 40s;
+}
+
+.burguer-info:nth-child(4) {
+    animation-delay: 60s;
+}
+
+@keyframes fadeText {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.imagenes-slider img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 80s infinite;
+    transition: opacity 1s ease-in-out;
+}
+
+.imagenes-slider img:nth-child(1) {
+    animation-delay: 0s;
+    /* Primera imagen empieza de inmediato */
+}
+
+.imagenes-slider img:nth-child(2) {
+    animation-delay: 5s;
+    /* Segunda imagen aparece después de 5s */
+}
+
+.imagenes-slider img:nth-child(3) {
+    animation-delay: 10s;
+    /* Tercera imagen aparece después de 10s */
+}
+
+.imagenes-slider img:nth-child(4) {
+    animation-delay: 15s;
+    /* Cuarta imagen aparece después de 15s */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 18px;
+    margin: 16px 0px;
+    padding: 0;
+    list-style: none;
+    top: 400px;
+}
+
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+
+header {
+    /* background-image: url('../assets/img/Fondo.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.cat-menu {
+    text-align: center;
+    background-color: #FFFFFF;
+    background-color: #F2F2F2;
+}
+
+.cat-menu h1 {
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 800;
+    color: #FF8000;
+    padding: 50px;
+}
+
+#menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 180px;
+}
+
+.menu-card {
+    position: relative;
+    width: 256px;
+    height: 352px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.menu-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    gap: 10px;
+}
+
+.menu-card:hover .overlay {
+    opacity: 1;
+}
+
+
+.menu-card .overlay .price-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 20px;
+    color: #FFFDD0;
+    align-items: baseline;
+}
+
+.menu-card .overlay .subname {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFDD0;
+}
+
+.menu-card .overlay .order-btn {
+    background-color: #F6762C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.menu-card .overlay .order-btn:hover {
+    background-color: #D15A20;
+    transform: scale(1.05);
+}
+
+.overlay h4,
+.overlay span {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.overlay h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.overlay span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu-card .overlay .precio {
+    font-size: 34px;
+    font-weight: 700;
+    color: #F5F5DC;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.menu-card:hover img {
+    transform: scale(1.1);
+}
+
+
+
+#container-recomendacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    width: 1020px;
+    height: 800px;
+    margin-bottom: 80px;
+
+}
+
+.recomend h1 {
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: #FF8000;
+    bottom: 100px;
+}
+
+.recomend h2 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.08px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    color: #1C1C1C;
+    bottom: 100px;
+}
+
+.card {
+    width: calc(25% - 30px);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 12px 16px -10px rgba(0, 0, 0, 0.25);
+}
+
+.imagenes {
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0px;
+    padding: 10px;
+    text-align: left;
+}
+
+.card-content h4 {
+    font-family: Montserrat;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.card-content span {
+    display: block;
+    font-family: Montserrat;
+    color: black;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+.card-content p.price {
+    font-family: Montserrat;
+    font-weight: 700;
+    color: red;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 27.08px;
+    letter-spacing: 0.005em;
+
+}
+
+
+.card {
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 301px;
+    height: 370px;
+    bottom: 30px;
+}
+
+.card_hover {
+    transform: scale(1.05);
+}
+
+
+.card img {
+    width: 301px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    font-family: Montserrat;
+
+    font-weight: 400;
+}
+
+.card .overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.card:hover .overlay {
+    bottom: 0;
+    opacity: 1;
+}
+
+.overlay-text {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.title-review {
+
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: #F6762C;
+    bottom: 80px;
+}
+
+.clientes h1 {
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: #FF8000;
+    top: 30px;
+    padding-bottom: 100px;
+}
+
+.contenedor-review {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 0px;
+    bottom: 90px;
+    left: 120px;
+}
+
+.contenedor-review img {
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+
+}
+
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    left: 100px;
+    width: 959px;
+    height: 500px;
+}
+
+.comentarios div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.comentarios .come1,
+.comentarios .come2,
+.comentarios .come3 {
+    width: 700px;
+    height: 174px;
+
+}
+
+.comentarios div p {
+    font-family: Montserrat;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 41.73px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    padding: 35px;
+    border-top-left-radius: 38px;
+    border-bottom-right-radius: 68px;
+    background-color: greenyellow;
+    color: #FFFFFF;
+
+}
+
+.comentarios .come2 p,
+.comentarios .come3 p {
+
+    background-color: green;
+    border-top-left-radius: 38px;
+    border-bottom-right-radius: 68px;
+
+
+
+}
+
+
+.comentarios div img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    bottom: 40px;
+}
+
+.descarga {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    gap: 0px;
+    background-color: #FF5B00;
+    padding: 0 20px;
+    bottom: 0px;
+}
+
+.descarga h1 {
+    color: #FFCF23F0;
+    margin-bottom: 30px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 101.18px;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.descarga button {
+    width: 237px;
+    height: 64px;
+    margin-right: 80px;
+    border-radius: 50px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28.04px;
+    letter-spacing: 0.115em;
+    color: #FF5B00;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    padding: 40px;
+    min-height: 200px;
+}
+
+.empresa,
+.platos,
+.info,
+.paginas {
+    flex: 1 1 200px;
+    margin: 20px;
+    top: 25px;
+}
+
+.empresa h2,
+.platos h4,
+.info h4,
+.paginas h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.empresa .correo,
+.empresa .web {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.platos span,
+.info span,
+.paginas span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.social-links2 {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin: 100px;
+    top: 60px;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.iconos2 {
+    text-decoration: none;
+    color: #FF5B00;
+    font-size: 18px;
+}
+
+.iconos2 img {
+    width: 25px;
+    height: 25px;
+}

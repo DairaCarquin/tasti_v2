@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*Reset*/
+* {
+  box-sizing: border-box;
+  position: relative;
+  min-width: 0;
+}
+
+body {
+  max-width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #F2F2F2;
+  overflow-x: hidden;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1 {
+  text-wrap: balance;
+}
+
+
+
+/*barra de navegacion*/
+
+#nav {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: fadeIn 1.5s ease-out;
+  padding-top: 30px;
+}
+
+#nav .title-nav a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: #FF5B00;
+  animation: fadeIn 1s ease-out;
+  margin: 19.92px 0;
+  line-height: 23.44px;
+
+}
+
+
+#nav a {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #000000;
+  line-height: 23.44px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.button-nav {
+  background-color: #F6762C;
+  width: 175px;
+  height: 49px;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 23.44px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  animation: fadeIn 2s ease-out;
+}
+
+header #nav {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+header #nav #links-nav a {
+  margin: 0px 20px;
+}
+
+
+/*menu*/
+
+#menu-nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente los enlaces */
+  align-items: center;
+}
+
+#menu-nav a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#menu-nav a:hover {
+  font-weight: 800;
+  /* Texto en negrita */
+  color: #333;
+  /* Color del texto al hacer hover */
+  border-bottom: 2px solid #FF5B00;
+  /* Subrayado con borde */
+  text-decoration: none;
+  /* Asegura que no se agregue subrayado predeterminado */
+  padding-bottom: 8px;
+  /* Ajusta el espaciado para el borde */
+}
+
+
+
+.menu-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding: 100px;
+}
+
+.menu-secciones {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 306px;
+  height: 404px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-secciones:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-secciones h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* Contenedor de precio y botón */
+.ordenar {
+  display: flex;
+  justify-content: space-between;
+  /* Espacio entre precio y botón */
+  align-items: center;
+  /* Centra verticalmente */
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+/* Producto personal o familiar */
+.menu-secciones .personal {
+  color: #FF5B00;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.menu-secciones .personal {
+  color: #FF5B00;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Precio */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Botón de ordenar */
+.order-button {
+  background-color: #FF5B00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #F6762C;
+}

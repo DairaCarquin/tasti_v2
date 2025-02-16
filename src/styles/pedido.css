@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Joti+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*Reset*/
+* {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 0;
+}
+
+.header-h1 {
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #F2F2F2;
+    overflow-x: hidden;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1 {
+    text-wrap: balance;
+}
+
+
+/* Barra de navegación */
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: fadeIn 1.5s ease-out;
+    padding-top: 30px;
+    margin-top: 10px;
+}
+
+#nav .title-nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: #FF5B00;
+    animation: fadeIn 1s ease-out;
+    margin: 19.92px 0;
+    line-height: 23.44px;
+}
+
+#nav a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #000000;
+    line-height: 23.44px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.button-nav {
+    background-color: #F6762C;
+    width: 175px;
+    height: 49px;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23.44px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-out;
+}
+
+header #nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+header #nav #links-nav a {
+    margin: 0px 20px;
+}
+
+/**/
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.contenedor {
+    width: 80%;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Que los hijos ocupen toda la altura */
+    padding: 20px;
+    gap: 20px;
+}
+
+.contenedor-col1 {
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.contenedor-col1,
+.contenedor-col2 {
+    flex: 1; /* Para que ambos ocupen el mismo espacio */
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background: white;
+    margin-bottom: 20px;
+}
+
+
+.header-col img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.col1 ul {
+    list-style: none;
+    padding: 5px;
+    /* top: 50px; */
+}
+
+.col1 li {
+    margin-bottom: 15px;
+}
+
+.col1 h3 {
+    margin-bottom: 10px;
+}
+
+.col1 button .boton {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.col1 button .boton a {
+    color: white;
+    text-decoration: none;
+}
+
+/* .col2 {
+    top: 250px;
+} */
+
+.col2 h3 {
+    margin: 25px 10px 15px;
+}
+
+.col2 ul {
+    margin-top: 10px;
+    margin-left: 10px;
+    /* top: 50px; */
+}
+
+.col1, .col2 {
+    flex-direction: column;
+    width: 90%;
+}
+
+.col1 ul, .col2 ul {
+    flex-grow: 1; /* Para que ocupen el espacio disponible */
+    overflow-y: auto; /* Agrega scroll si hay muchos pedidos */
+}
+
+.inputBox {
+    margin-bottom: 25px;
+}
+
+.inputBox label {
+    display: block;
+    margin: 5px 0;
+}
+
+.inputBox input,
+.inputBox select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contenedor-col2 button {
+    background-color: #FF5B00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Contenedor con scroll */
+.col1-pedido-contenedor {
+    max-height: 80px;  /* Altura máxima antes de que aparezca el scroll */
+    overflow-y: auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    top: -10px;
+}
+
+
+.col2-pedido-contenedor {
+    top: -135px;
+}
+
+/* Scrollbar */
+.col1-pedido-contenedor::-webkit-scrollbar {
+    width: 8px;
+}
+
+.col1-pedido-contenedor::-webkit-scrollbar-thumb {
+    background: #F6762C;
+    border-radius: 4px;
+}
+
+.col1-pedido-contenedor::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
