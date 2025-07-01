@@ -42,6 +42,7 @@ const BebidasSection = () => {
                     price: product.precio,
                     size: "500 ml",
                     image: imageMap[product.imagen] || beb1,
+                    categoria: "Bebidas",
                 }));
 
                 setProducts(productsWithImages);

@@ -33,6 +33,8 @@ const OtrosSection = () => {
           name: producto.nombre,
           price: producto.precio,
           image: imageMap[producto.imagen] || otros1,
+          size: "Personal",
+          categoria: "Otros",
         }));
 
         setProducts(productsWithImages);

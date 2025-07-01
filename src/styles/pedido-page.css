@@ -1,0 +1,39 @@
+.contenedor-pedidos {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.contenedor-pedido {
+    display: flex;
+    width: 80%;
+    align-items: stretch;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-col1 {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header-h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .contenedor-pedido {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .contenedor-col1 {
+        width: 100%;
+    }
+}

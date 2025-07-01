@@ -42,6 +42,7 @@ const BurgerSection = () => {
                     price: product.precio,
                     size: "Personal",
                     image: imageMap[product.imagen] || burguer1,
+                    categoria: "Hamburguesas",
                 }));
 
                 setProducts(productsWithImages);

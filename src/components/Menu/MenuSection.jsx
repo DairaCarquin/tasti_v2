@@ -3,10 +3,21 @@ import "../../styles/menu/menu.css";
 
 const MenuSection = ({ items }) => {
     const handleOrder = (item) => {
-        const pedidos = JSON.parse(sessionStorage.getItem("pedidos")) || [];
-        pedidos.push(item);
-        sessionStorage.setItem("pedidos", JSON.stringify(pedidos));
-        window.location.href = "/pedido"; 
+    const pedidos = JSON.parse(sessionStorage.getItem("pedidos")) || [];
+
+    const nuevoPedido = {
+        ...item,
+        cantidad: 1,
+        tamano: "personal",
+        extras: [],
+    };
+
+    pedidos.push(nuevoPedido);
+
+    sessionStorage.setItem("pedidos", JSON.stringify(pedidos));
+    sessionStorage.setItem("pedidoActual", JSON.stringify(nuevoPedido)); // 🔁 Este es el importante
+
+    window.location.href = "/pedido";
     };
 
     return (

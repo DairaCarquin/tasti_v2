@@ -33,6 +33,8 @@ const ComplementosSection = () => {
           name: producto.nombre,
           price: producto.precio,
           image: imageMap[producto.imagen] || comp1,
+          size: "Personal",
+          categoria: "Complementos",
         }));
 
         setProducts(productsWithImages);

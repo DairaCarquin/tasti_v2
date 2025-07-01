@@ -15,9 +15,6 @@ const AboutUs = () => {
                 <button className="boton">
                     <a href="#">Ir al menú &gt;</a>
                 </button>
-                <div className="inputBox">
-                    <input type="text" placeholder="Buscar platillos" />
-                </div>
             </div>
             <div className="col2">
                 <Carousel />

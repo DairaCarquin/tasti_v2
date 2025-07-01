@@ -1,0 +1,18 @@
+.inputBox-option {
+display: block;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.inputBox-option label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.inputBox-option input[type="checkbox"] {
+    margin-right: 20px;
+    margin-left: 25px;
+}

@@ -31,25 +31,22 @@ h1 {
 
 
 #nav {
-
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     animation: fadeIn 1.5s ease-out;
-    padding-top: 30px;
 }
 
 #nav .title-nav a {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 50px;
-    color: #FF5B00;
+    font-size: 40px;
+    color: #FF5B00 !important;
     animation: fadeIn 1s ease-out;
     margin: 19.92px 0;
     line-height: 23.44px;
-
 }
 
 
@@ -80,7 +77,7 @@ h1 {
     height: 49px;
     border-radius: 8px;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
     line-height: 23.44px;
     color: #ffffff;
